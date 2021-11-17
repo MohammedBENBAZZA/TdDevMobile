@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 final int max = Integer.valueOf(String.valueOf(choice.getText()));
                 final int random1 = new Random().nextInt((max - min) + 1) + min;
                 final int random2 = new Random().nextInt((max - min) + 1) + min;
-                //change the text value
+                //change the text values
                 Number1.setText(String.valueOf(random1));
                 Number2.setText(String.valueOf(random2));
 
