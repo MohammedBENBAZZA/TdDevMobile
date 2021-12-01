@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.List;
@@ -21,16 +22,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        Button loginButton = (Button) findViewById(R.id.button);
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        Button button = (Button) findViewById(R.id.button);
+        EditText editText = findViewById(R.id.repoName);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,RepoActivity.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RepoActivity.class);
+                intent.putExtra("repo", editText.getText().toString());
                 startActivity(intent);
-
             }
         });
-
     }
-
 }
