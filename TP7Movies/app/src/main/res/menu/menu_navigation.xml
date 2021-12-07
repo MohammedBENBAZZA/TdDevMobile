@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+       android:id="@+id/popular"
+        android:title="Popular"
+        android:icon="@drawable/ic_baseline_star_24"
+        />
+    <item
+        android:id="@+id/vide"
+        android:title=""
+
+        />
+    <item
+        android:id="@+id/upcoming"
+        android:title="Upcoming"
+        android:icon="@drawable/ic_baseline_fiber_new_24"
+        />
+</menu>
