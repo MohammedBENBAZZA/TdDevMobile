@@ -40,7 +40,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         Context context=holder.itemView.getContext();
         Movie movie = mMovies.get(position);
         ImageView imageView = holder.movieImg;
-        Glide.with(context).load("https://image.tmdb.org/t/p/original"+movie.getPoster_path()).into(imageView);
+        if (movie.getPoster_path() != null) {
+            Glide.with(context).load("https://image.tmdb.org/t/p/original" + movie.getPoster_path()).into(imageView);
+        } else {
+            Glide.with(context).load("https://www.seekpng.com/png/detail/94-945337_open-transparent-background-movie-icon.png").into(imageView);
+        }
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,8 +57,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
             public ArrayList<String> getGenreById(List<Integer> ids, List<Genre> genres) {
                 ArrayList<String> genresText = new ArrayList<>();
-                for (int n:
-                        ids) {
+                for (int n: ids) {
                     for (Genre g:
                             genres) {
                         if(n == g.getId()) {

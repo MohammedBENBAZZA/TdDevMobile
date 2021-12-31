@@ -7,8 +7,9 @@
         android:icon="@drawable/ic_baseline_star_24"
         />
     <item
-        android:id="@+id/vide"
-        android:title=""
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
 
         />
     <item

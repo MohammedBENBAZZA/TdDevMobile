@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/marou/AndroidStudioProjects/TdDevMobile/TP7Movies/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/marou/AndroidStudioProjects/TdDevMobile/TP7Movies/app/src/main/res/layout/activity_main.xml" value="0.35161744022503516" />
+        <entry key="..\:/Users/marou/AndroidStudioProjects/TdDevMobile/TP7Movies/app/src/main/res/layout/activity_movie_infos.xml" value="0.4" />
+        <entry key="..\:/Users/marou/AndroidStudioProjects/TdDevMobile/TP7Movies/app/src/main/res/layout/item_movie.xml" value="0.264" />
+        <entry key="..\:/Users/marou/AndroidStudioProjects/TdDevMobile/TP7Movies/app/src/main/res/menu/menu_navigation.xml" value="0.13802083333333334" />
         <entry key="..\:/Users/mbenbazza/AndroidStudioProjects/TP7Movies/app/src/main/res/drawable/selector.xml" value="0.3828125" />
         <entry key="..\:/Users/mbenbazza/AndroidStudioProjects/TP7Movies/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/mbenbazza/AndroidStudioProjects/TP7Movies/app/src/main/res/layout/activity_movie_infos.xml" value="0.36666666666666664" />

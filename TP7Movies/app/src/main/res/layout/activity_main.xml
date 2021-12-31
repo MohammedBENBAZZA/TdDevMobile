@@ -9,15 +9,18 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMovies"
-        android:layout_width="379dp"
-        android:layout_height="520dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomnavigation"
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:itemBackground="@color/design_default_color_primary"
@@ -25,6 +28,36 @@
         app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_navigation" />
+
+    <LinearLayout
+        android:id="@+id/form_search"
+        android:visibility = "gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rvMovies">
+
+        <EditText
+            android:id="@+id/form_text"
+            android:layout_width="fill_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_marginLeft="4dp"
+            android:hint=" Your movie name"
+            android:padding="0dp"></EditText>
+
+        <Button
+            android:id="@+id/form_botton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="14dp"
+            android:text="Search"></Button>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
